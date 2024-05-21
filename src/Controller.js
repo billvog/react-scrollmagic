@@ -33,6 +33,7 @@ class Controller extends React.Component<ControllerProps, ControllerState> {
   }
 
   componentWillUnmount() {
+    this.controller.destroy();
     this.controller = null;
   }
 
